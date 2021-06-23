@@ -13,8 +13,8 @@ The server stores timestamped commands, responses, and connection histories in a
 ## The Client
 Client.py is a basic client that makes HTTPS requests to the server. It initializes a connection by accessing the Register application. It then contacts the servers command application at intervals based on the jitter variables (jlo and jhi) to determine if any commands have been issued to it. It has the capabily of running OS commands, as well as several predefined commands. These predefined commands include:
 
-*adj_jitter: adjust the jlo and jhi variables.
-*listdir: list the contents of the current directory
+* adj_jitter: adjust the jlo and jhi variables.
+* listdir: list the contents of the current directory
 
 ## Encryption
 Communication between the client and server are encrypted with AES encryption. A key exchange occurs initially during registration. The process happens as follows:
